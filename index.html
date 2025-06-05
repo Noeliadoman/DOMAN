@@ -50,12 +50,18 @@
       object-fit: cover;
       border: 2px solid #ccc;
     }
-
-    .extra-photo {
-      width: 50%;
-      max-width: 250px;
-      display: block;
-      margin: 20px auto;
+    .photo-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .photo-row img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
       border-radius: 10px;
       border: 1px solid #ccc;
     }
@@ -95,9 +101,11 @@
       </div>
     </div>  
 
-    <h2>Family</h2>
-    <img src="photos/family.jpg" alt="Noelia's Family" class="extra-photo">
-    <img src="photos/family2.jpg" alt="Noelia's Family" class="extra-photo">
+    <h2>More Photos</h2>
+    <div class="photo-row">
+      <img src="photos/family.jpg" alt="my family">
+      <img src="photos/family2.jpg" alt="my family">
+    </div>
 
     <h2>My Projects</h2>
     <ul>
